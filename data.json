@@ -1,0 +1,20 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Choque de Reyes",
+      "author": "George R.R. Martin",
+      "pages": 798,
+      "year": 2000,
+      "genre": "medieval"
+    },
+    {
+      "id": 2,
+      "title": "Cien años de Soledad",
+      "author": "Gabriel Gracía Márquez",
+      "pages": 623,
+      "year": 1978,
+      "genre": "novela"
+    }
+  ]
+}
