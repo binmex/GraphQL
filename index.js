@@ -1,9 +1,13 @@
 const express = require("express");
+const cors = require("cors")
 
 const express_graphql = require("express-graphql").graphqlHTTP;
 const { buildSchema } = require("graphql");
 
 const app = express();
+
+app.use(cors());
+
 
 const { books } = require("./data.json");
 
@@ -60,6 +64,8 @@ app.use(
   "/graphql",
   express_graphql({ schema: schema, rootValue: root, graphiql: true })
 );
+
+
 app.listen(app.get("port"), () =>
   console.log(`Server at Port ${app.get("port")}`)
 );
